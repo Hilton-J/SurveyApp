@@ -167,7 +167,7 @@
             this.txtEmail.Location = new System.Drawing.Point(221, 125);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(153, 20);
-            this.txtEmail.TabIndex = 1;
+            this.txtEmail.TabIndex = 2;
             // 
             // lblDoB
             // 
@@ -192,7 +192,7 @@
             this.txtContactNum.Location = new System.Drawing.Point(221, 222);
             this.txtContactNum.Name = "txtContactNum";
             this.txtContactNum.Size = new System.Drawing.Size(153, 20);
-            this.txtContactNum.TabIndex = 1;
+            this.txtContactNum.TabIndex = 4;
             // 
             // lblFavFood
             // 
@@ -209,7 +209,7 @@
             this.cbPizza.Location = new System.Drawing.Point(266, 279);
             this.cbPizza.Name = "cbPizza";
             this.cbPizza.Size = new System.Drawing.Size(51, 17);
-            this.cbPizza.TabIndex = 2;
+            this.cbPizza.TabIndex = 5;
             this.cbPizza.Text = "Pizza";
             this.cbPizza.UseVisualStyleBackColor = true;
             // 
@@ -219,7 +219,7 @@
             this.cbPasta.Location = new System.Drawing.Point(335, 279);
             this.cbPasta.Name = "cbPasta";
             this.cbPasta.Size = new System.Drawing.Size(53, 17);
-            this.cbPasta.TabIndex = 2;
+            this.cbPasta.TabIndex = 6;
             this.cbPasta.Text = "Pasta";
             this.cbPasta.UseVisualStyleBackColor = true;
             // 
@@ -229,7 +229,7 @@
             this.cbPapWors.Location = new System.Drawing.Point(407, 279);
             this.cbPapWors.Name = "cbPapWors";
             this.cbPapWors.Size = new System.Drawing.Size(94, 17);
-            this.cbPapWors.TabIndex = 2;
+            this.cbPapWors.TabIndex = 7;
             this.cbPapWors.Text = "Pap and Wors";
             this.cbPapWors.UseVisualStyleBackColor = true;
             // 
@@ -239,7 +239,7 @@
             this.cbOther.Location = new System.Drawing.Point(521, 280);
             this.cbOther.Name = "cbOther";
             this.cbOther.Size = new System.Drawing.Size(52, 17);
-            this.cbOther.TabIndex = 2;
+            this.cbOther.TabIndex = 8;
             this.cbOther.Text = "Other";
             this.cbOther.UseVisualStyleBackColor = true;
             // 
@@ -259,7 +259,7 @@
             this.lblFrmSurvey.Location = new System.Drawing.Point(589, 9);
             this.lblFrmSurvey.Name = "lblFrmSurvey";
             this.lblFrmSurvey.Size = new System.Drawing.Size(101, 13);
-            this.lblFrmSurvey.TabIndex = 0;
+            this.lblFrmSurvey.TabIndex = 11;
             this.lblFrmSurvey.Text = "FILL OUT SURVEY";
             // 
             // lblFrmResult
@@ -907,7 +907,7 @@
             this.dtpDOB.Location = new System.Drawing.Point(221, 175);
             this.dtpDOB.Name = "dtpDOB";
             this.dtpDOB.Size = new System.Drawing.Size(200, 20);
-            this.dtpDOB.TabIndex = 6;
+            this.dtpDOB.TabIndex = 3;
             this.dtpDOB.Value = new System.DateTime(2024, 5, 26, 14, 38, 44, 0);
             // 
             // label6

@@ -314,6 +314,7 @@
             this.Controls.Add(this.lblFrmSurvey);
             this.Name = "Results";
             this.Text = "Survey";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Results_FormClosing);
             this.Load += new System.EventHandler(this.Results_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

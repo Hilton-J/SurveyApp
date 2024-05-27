@@ -10,8 +10,8 @@ namespace SruveyApp
     public partial class Survey1 : Form
     {
         DBHandler db;
-        int score;
-        int rating1, rating2, rating3, rating4;
+        int score = 0;
+        int rating1 = 0, rating2 = 0, rating3 = 0, rating4 = 0;
         public Survey1()
         {
             InitializeComponent();
@@ -243,8 +243,15 @@ namespace SruveyApp
         }
 
         private void Survey1_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
+        {          
+            DialogResult dr = MessageBox.Show("Are you sure?", "Confirm Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dr == DialogResult.No)
+            {
+                e.Cancel = true;
+                return;
+            }
+            //Application.Exit();
+
         }
 
         // This method changes the label color of a field that has missing information
@@ -324,6 +331,7 @@ namespace SruveyApp
                     pr.WatchTV = rating4;
 
                     db.AddResponse(pr);
+                    MessageBox.Show("Survey Submitted!");
                 }
 
             }

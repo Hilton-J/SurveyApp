@@ -53,5 +53,15 @@ namespace SruveyApp
             frmSurvey.Show();
             this.Hide();
         }
+
+        private void Results_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("Are you sure?", "Confirm Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dr == DialogResult.No)
+            {
+                e.Cancel = true;
+                return;
+            }
+        }
     }
 }
