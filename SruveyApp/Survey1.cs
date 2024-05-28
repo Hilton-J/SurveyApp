@@ -12,7 +12,7 @@ namespace SruveyApp
         DBHandler db;
         int score = 0;
         int rating1 = 0, rating2 = 0, rating3 = 0, rating4 = 0;
-        private Results frmResults; 
+        private Results frmResults;
         public Survey1()
         {
             InitializeComponent();
@@ -287,11 +287,11 @@ namespace SruveyApp
                 db = new DBHandler();
 
                 // Validate if textbox is empty
-                if (txtFullName.Text.Trim() == string.Empty) ChangeLabelColor(lblFullName, Color.Red);
-                if (txtEmail.Text.Trim() == string.Empty) ChangeLabelColor(lblEmail, Color.Red);
-                if (txtContactNum.Text.Trim() == string.Empty) ChangeLabelColor(lblContactNum, Color.Red);
+                if (txtFullName.Text.Trim() == string.Empty) ChangeLabelColor(lblFullName, Color.Red); else ChangeLabelColor(lblFullName, Color.Black);
+                if (txtEmail.Text.Trim() == string.Empty) ChangeLabelColor(lblEmail, Color.Red); else ChangeLabelColor(lblEmail, Color.Black);
+                if (txtContactNum.Text.Trim() == string.Empty) ChangeLabelColor(lblContactNum, Color.Red); else ChangeLabelColor(lblContactNum, Color.Black);
 
-                
+
 
                 // 
                 string fFood = "";
@@ -299,41 +299,31 @@ namespace SruveyApp
                 if ((cbState & 2) != 0) fFood += "Pasta ";
                 if ((cbState & 3) != 0) fFood += "Pap and Wors ";
                 if ((cbState & 4) != 0) fFood += "Other";
-                if (fFood == "") ChangeLabelColor(lblFavFood, Color.Red);
+                if (fFood == "") ChangeLabelColor(lblFavFood, Color.Red); else ChangeLabelColor(lblFavFood, Color.Black);
 
                 // Email format validation
                 string email = txtEmail.Text;
 
 
                 // Validate if rating is selected
-                if (rating1 == 0)
-                {
-                    ChangeLabelColor(lblMovies, Color.Red);
-                }
-                if (rating2 == 0)
-                {
-                    ChangeLabelColor(lblRadio, Color.Red);
-                }
-                if (rating3 == 0)
-                {
-                    ChangeLabelColor(lblEatOut, Color.Red);
-                }
-                if (rating4 == 0)
-                {
-                    ChangeLabelColor(lblWatchTV, Color.Red);
-                }
+                if (rating1 == 0) ChangeLabelColor(lblMovies, Color.Red); else ChangeLabelColor(lblMovies, Color.Black);
+                if (rating2 == 0) ChangeLabelColor(lblRadio, Color.Red); else ChangeLabelColor(lblRadio, Color.Black);
+                if (rating3 == 0) ChangeLabelColor(lblEatOut, Color.Red); else ChangeLabelColor(lblEatOut, Color.Black);
+                if (rating4 == 0) ChangeLabelColor(lblWatchTV, Color.Red); else ChangeLabelColor(lblWatchTV, Color.Black);
 
                 DateTime selected = dtpDOB.Value;
                 int age = CalculateAge(selected);
                 if (!IsValidEmail(email))
                 {
                     ChangeLabelColor(lblEmail, Color.Red);
-                    MessageBox.Show("Please enter valid email address. e.g. email@email.doimain");
+                    MessageBox.Show("Please enter valid email address. e.g. email@email.doimain", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
+                else ChangeLabelColor(lblEmail, Color.Black);
+
                 if (age > 120 || age < 5 || dtpDOB.Value == DateTime.Today)
                 {
-                    MessageBox.Show("You're not aligible to take this survey!");
+                    MessageBox.Show("You're not aligible to take this survey!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 else
@@ -350,10 +340,10 @@ namespace SruveyApp
                     pr.WatchTV = rating4;
 
                     db.AddResponse(pr);
-                    
+
                     ResetForm();
 
-                    MessageBox.Show("Survey Submitted!");
+                    MessageBox.Show("Survey Submitted!", "Okay", MessageBoxButtons.OKCancel, MessageBoxIcon.None);
                 }
 
             }
