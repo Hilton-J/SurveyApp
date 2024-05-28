@@ -39,7 +39,7 @@ namespace SruveyApp
 
             // Favourite food
             cbOther.Checked = false;
-            cbPapWors.Checked = false; 
+            cbPapWors.Checked = false;
             cbPasta.Checked = false;
             cbPizza.Checked = false;
 
@@ -243,14 +243,13 @@ namespace SruveyApp
         }
 
         private void Survey1_FormClosing(object sender, FormClosingEventArgs e)
-        {          
+        {
             DialogResult dr = MessageBox.Show("Are you sure?", "Confirm Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dr == DialogResult.No)
             {
                 e.Cancel = true;
                 return;
             }
-            //Application.Exit();
 
         }
 

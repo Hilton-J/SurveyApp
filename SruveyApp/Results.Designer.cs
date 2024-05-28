@@ -313,6 +313,7 @@
             this.Controls.Add(this.lblFrmResult);
             this.Controls.Add(this.lblFrmSurvey);
             this.Name = "Results";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Survey";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Results_FormClosing);
             this.Load += new System.EventHandler(this.Results_Load);
