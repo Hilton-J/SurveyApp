@@ -12,15 +12,23 @@ namespace SruveyApp
         DBHandler db;
         int score = 0;
         int rating1 = 0, rating2 = 0, rating3 = 0, rating4 = 0;
+        private Results frmResults; 
         public Survey1()
         {
             InitializeComponent();
         }
-
-        private void Survey1_Load(object sender, EventArgs e)
+        //Metthod to reset survey
+        private void ResetForm()
         {
-            lblFrmResult.ForeColor = Color.Black;
-            lblFrmSurvey.ForeColor = Color.Blue;
+            lblContactNum.ForeColor = Color.Black;
+            lblFullName.ForeColor = Color.Black;
+            lblEmail.ForeColor = Color.Black;
+            lblDoB.ForeColor = Color.Black;
+            lblWatchTV.ForeColor = Color.Black;
+            lblFavFood.ForeColor = Color.Black;
+            lblMovies.ForeColor = Color.Black;
+            lblRadio.ForeColor = Color.Black;
+            lblEatOut.ForeColor = Color.Black;
             lblError.Visible = false;
 
             // Reset global values
@@ -35,7 +43,7 @@ namespace SruveyApp
             txtContactNum.Text = "";
             txtEmail.Text = "";
             txtFullName.Text = "";
-            dtpDOB.Value = DateTime.Now;
+            dtpDOB.Value = DateTime.Today;
 
             // Favourite food
             cbOther.Checked = false;
@@ -74,10 +82,21 @@ namespace SruveyApp
             rb3Disagree.Checked = false;
             rb4Disagree.Checked = false;
         }
+        private void Survey1_Load(object sender, EventArgs e)
+        {
+            frmResults = new Results();
+            frmResults.Hide();
+
+
+            lblFrmResult.ForeColor = Color.Black;
+            lblFrmSurvey.ForeColor = Color.Blue;
+            lblError.Visible = false;
+            ResetForm();
+        }
 
         private void lblFrmResult_Click(object sender, EventArgs e)
         {
-            Results frmResults = new Results();
+            frmResults = new Results();
             frmResults.Show();
             this.Hide();
         }
@@ -254,10 +273,9 @@ namespace SruveyApp
         }
 
         // This method changes the label color of a field that has missing information
-        private void Error(Label l)
+        private void ChangeLabelColor(Label l, Color c)
         {
-            l.ForeColor = Color.Red;
-            l.Font = new Font(l.Font.FontFamily, l.Font.Size, FontStyle.Bold);
+            l.ForeColor = c;
             lblError.Visible = true;
             return;
         }
@@ -269,10 +287,11 @@ namespace SruveyApp
                 db = new DBHandler();
 
                 // Validate if textbox is empty
-                if (txtFullName.Text == string.Empty) Error(lblFullName);
-                if (txtEmail.Text == string.Empty) Error(lblEmail);
-                if (txtContactNum.Text == string.Empty) Error(lblContactNum);
-                if (dtpDOB.Value == DateTime.Now) Error(lblDoB);
+                if (txtFullName.Text.Trim() == string.Empty) ChangeLabelColor(lblFullName, Color.Red);
+                if (txtEmail.Text.Trim() == string.Empty) ChangeLabelColor(lblEmail, Color.Red);
+                if (txtContactNum.Text.Trim() == string.Empty) ChangeLabelColor(lblContactNum, Color.Red);
+
+                
 
                 // 
                 string fFood = "";
@@ -280,38 +299,39 @@ namespace SruveyApp
                 if ((cbState & 2) != 0) fFood += "Pasta ";
                 if ((cbState & 3) != 0) fFood += "Pap and Wors ";
                 if ((cbState & 4) != 0) fFood += "Other";
-                if (fFood == "") Error(lblFavFood);
+                if (fFood == "") ChangeLabelColor(lblFavFood, Color.Red);
 
                 // Email format validation
                 string email = txtEmail.Text;
-                if (!IsValidEmail(email))
-                {
-                    Error(lblEmail);
-                    MessageBox.Show("Please enter valid email address. e.g. email@email.doimain");
-                    return;
-                }
 
-                // Validate if rating is s
+
+                // Validate if rating is selected
                 if (rating1 == 0)
                 {
-                    Error(lblMovies);
+                    ChangeLabelColor(lblMovies, Color.Red);
                 }
                 if (rating2 == 0)
                 {
-                    Error(lblRadio);
+                    ChangeLabelColor(lblRadio, Color.Red);
                 }
                 if (rating3 == 0)
                 {
-                    Error(lblEatOut);
+                    ChangeLabelColor(lblEatOut, Color.Red);
                 }
                 if (rating4 == 0)
                 {
-                    Error(lblWatchTV);
+                    ChangeLabelColor(lblWatchTV, Color.Red);
                 }
 
                 DateTime selected = dtpDOB.Value;
                 int age = CalculateAge(selected);
-                if (age > 120 || age < 5)
+                if (!IsValidEmail(email))
+                {
+                    ChangeLabelColor(lblEmail, Color.Red);
+                    MessageBox.Show("Please enter valid email address. e.g. email@email.doimain");
+                    return;
+                }
+                if (age > 120 || age < 5 || dtpDOB.Value == DateTime.Today)
                 {
                     MessageBox.Show("You're not aligible to take this survey!");
                     return;
@@ -330,6 +350,9 @@ namespace SruveyApp
                     pr.WatchTV = rating4;
 
                     db.AddResponse(pr);
+                    
+                    ResetForm();
+
                     MessageBox.Show("Survey Submitted!");
                 }
 

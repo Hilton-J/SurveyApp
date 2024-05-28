@@ -15,6 +15,7 @@ namespace SruveyApp
     public partial class Results : Form
     {
         DBHandler db;
+        private Survey1 frmSurvey;
         public Results()
         {
             InitializeComponent();
@@ -22,6 +23,9 @@ namespace SruveyApp
 
         private void Results_Load(object sender, EventArgs e)
         {
+            frmSurvey = new Survey1();
+            frmSurvey.Hide();
+
             db = new DBHandler();
             lblFrmSurvey.ForeColor = Color.Black;
             lblFrmResult.ForeColor = Color.Blue;
@@ -49,7 +53,7 @@ namespace SruveyApp
 
         private void lblFrmSurvey_Click(object sender, EventArgs e)
         {
-            Survey1 frmSurvey = new Survey1();
+            frmSurvey = new Survey1();
             frmSurvey.Show();
             this.Hide();
         }
