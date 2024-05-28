@@ -288,9 +288,9 @@
             // 
             this.panel11.Controls.Add(this.rb3StronglyAgree);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel11.Location = new System.Drawing.Point(148, 84);
+            this.panel11.Location = new System.Drawing.Point(146, 84);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(102, 21);
+            this.panel11.Size = new System.Drawing.Size(100, 21);
             this.panel11.TabIndex = 8;
             // 
             // rb3StronglyAgree
@@ -300,7 +300,7 @@
             this.rb3StronglyAgree.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rb3StronglyAgree.Location = new System.Drawing.Point(0, 0);
             this.rb3StronglyAgree.Name = "rb3StronglyAgree";
-            this.rb3StronglyAgree.Size = new System.Drawing.Size(102, 21);
+            this.rb3StronglyAgree.Size = new System.Drawing.Size(100, 21);
             this.rb3StronglyAgree.TabIndex = 0;
             this.rb3StronglyAgree.TabStop = true;
             this.rb3StronglyAgree.UseVisualStyleBackColor = true;
@@ -310,7 +310,7 @@
             // 
             this.panel12.Controls.Add(this.rb3Agree);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel12.Location = new System.Drawing.Point(257, 84);
+            this.panel12.Location = new System.Drawing.Point(253, 84);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(102, 21);
             this.panel12.TabIndex = 8;
@@ -332,9 +332,9 @@
             // 
             this.panel13.Controls.Add(this.rb3StronglyDisagree);
             this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel13.Location = new System.Drawing.Point(573, 84);
+            this.panel13.Location = new System.Drawing.Point(569, 84);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(109, 21);
+            this.panel13.Size = new System.Drawing.Size(113, 21);
             this.panel13.TabIndex = 8;
             // 
             // rb3StronglyDisagree
@@ -344,7 +344,7 @@
             this.rb3StronglyDisagree.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rb3StronglyDisagree.Location = new System.Drawing.Point(0, 0);
             this.rb3StronglyDisagree.Name = "rb3StronglyDisagree";
-            this.rb3StronglyDisagree.Size = new System.Drawing.Size(109, 21);
+            this.rb3StronglyDisagree.Size = new System.Drawing.Size(113, 21);
             this.rb3StronglyDisagree.TabIndex = 0;
             this.rb3StronglyDisagree.TabStop = true;
             this.rb3StronglyDisagree.UseVisualStyleBackColor = true;
@@ -354,7 +354,7 @@
             // 
             this.panel14.Controls.Add(this.rb3Neutral);
             this.panel14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel14.Location = new System.Drawing.Point(366, 84);
+            this.panel14.Location = new System.Drawing.Point(362, 84);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(90, 21);
             this.panel14.TabIndex = 8;
@@ -376,7 +376,7 @@
             // 
             this.panel15.Controls.Add(this.rb3Disagree);
             this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel15.Location = new System.Drawing.Point(463, 84);
+            this.panel15.Location = new System.Drawing.Point(459, 84);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(103, 21);
             this.panel15.TabIndex = 8;
@@ -397,7 +397,7 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.rb1Neutral);
-            this.panel3.Location = new System.Drawing.Point(366, 29);
+            this.panel3.Location = new System.Drawing.Point(362, 29);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(90, 20);
             this.panel3.TabIndex = 6;
@@ -422,7 +422,7 @@
             this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label17.Location = new System.Drawing.Point(4, 1);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(137, 24);
+            this.label17.Size = new System.Drawing.Size(135, 24);
             this.label17.TabIndex = 2;
             // 
             // label16
@@ -430,9 +430,9 @@
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.SystemColors.ControlDark;
             this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label16.Location = new System.Drawing.Point(573, 1);
+            this.label16.Location = new System.Drawing.Point(569, 1);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(109, 24);
+            this.label16.Size = new System.Drawing.Size(113, 24);
             this.label16.TabIndex = 0;
             this.label16.Text = "Strongly Disagree";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -442,7 +442,7 @@
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.SystemColors.ControlDark;
             this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label15.Location = new System.Drawing.Point(463, 1);
+            this.label15.Location = new System.Drawing.Point(459, 1);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(103, 24);
             this.label15.TabIndex = 0;
@@ -454,7 +454,7 @@
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.SystemColors.ControlDark;
             this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label13.Location = new System.Drawing.Point(257, 1);
+            this.label13.Location = new System.Drawing.Point(253, 1);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(102, 24);
             this.label13.TabIndex = 0;
@@ -466,7 +466,7 @@
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.SystemColors.ControlDark;
             this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label14.Location = new System.Drawing.Point(366, 1);
+            this.label14.Location = new System.Drawing.Point(362, 1);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(90, 24);
             this.label14.TabIndex = 0;
@@ -479,7 +479,7 @@
             this.lblEatOut.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblEatOut.Location = new System.Drawing.Point(4, 81);
             this.lblEatOut.Name = "lblEatOut";
-            this.lblEatOut.Size = new System.Drawing.Size(137, 27);
+            this.lblEatOut.Size = new System.Drawing.Size(135, 27);
             this.lblEatOut.TabIndex = 0;
             this.lblEatOut.Text = "I like to eat out";
             this.lblEatOut.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -490,7 +490,7 @@
             this.lblRadio.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblRadio.Location = new System.Drawing.Point(4, 53);
             this.lblRadio.Name = "lblRadio";
-            this.lblRadio.Size = new System.Drawing.Size(137, 27);
+            this.lblRadio.Size = new System.Drawing.Size(135, 27);
             this.lblRadio.TabIndex = 0;
             this.lblRadio.Text = "I like to listen to radio";
             this.lblRadio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -500,9 +500,9 @@
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.SystemColors.ControlDark;
             this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label12.Location = new System.Drawing.Point(148, 1);
+            this.label12.Location = new System.Drawing.Point(146, 1);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(102, 24);
+            this.label12.Size = new System.Drawing.Size(100, 24);
             this.label12.TabIndex = 0;
             this.label12.Text = "Strongly Agree";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -513,7 +513,7 @@
             this.lblMovies.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblMovies.Location = new System.Drawing.Point(4, 26);
             this.lblMovies.Name = "lblMovies";
-            this.lblMovies.Size = new System.Drawing.Size(137, 26);
+            this.lblMovies.Size = new System.Drawing.Size(135, 26);
             this.lblMovies.TabIndex = 0;
             this.lblMovies.Text = "I Like to wacth movies";
             this.lblMovies.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -524,7 +524,7 @@
             this.lblWatchTV.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblWatchTV.Location = new System.Drawing.Point(4, 109);
             this.lblWatchTV.Name = "lblWatchTV";
-            this.lblWatchTV.Size = new System.Drawing.Size(137, 27);
+            this.lblWatchTV.Size = new System.Drawing.Size(135, 27);
             this.lblWatchTV.TabIndex = 0;
             this.lblWatchTV.Text = "I like to watch TV";
             this.lblWatchTV.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -533,9 +533,9 @@
             // 
             this.panel1.Controls.Add(this.rb1StronglyAgree);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(148, 29);
+            this.panel1.Location = new System.Drawing.Point(146, 29);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(102, 20);
+            this.panel1.Size = new System.Drawing.Size(100, 20);
             this.panel1.TabIndex = 5;
             // 
             // rb1StronglyAgree
@@ -545,7 +545,7 @@
             this.rb1StronglyAgree.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rb1StronglyAgree.Location = new System.Drawing.Point(0, 0);
             this.rb1StronglyAgree.Name = "rb1StronglyAgree";
-            this.rb1StronglyAgree.Size = new System.Drawing.Size(102, 20);
+            this.rb1StronglyAgree.Size = new System.Drawing.Size(100, 20);
             this.rb1StronglyAgree.TabIndex = 0;
             this.rb1StronglyAgree.TabStop = true;
             this.rb1StronglyAgree.UseVisualStyleBackColor = true;
@@ -555,9 +555,9 @@
             // 
             this.panel6.Controls.Add(this.rb2StronglyAgree);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(148, 56);
+            this.panel6.Location = new System.Drawing.Point(146, 56);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(102, 21);
+            this.panel6.Size = new System.Drawing.Size(100, 21);
             this.panel6.TabIndex = 7;
             // 
             // rb2StronglyAgree
@@ -567,7 +567,7 @@
             this.rb2StronglyAgree.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rb2StronglyAgree.Location = new System.Drawing.Point(0, 0);
             this.rb2StronglyAgree.Name = "rb2StronglyAgree";
-            this.rb2StronglyAgree.Size = new System.Drawing.Size(102, 21);
+            this.rb2StronglyAgree.Size = new System.Drawing.Size(100, 21);
             this.rb2StronglyAgree.TabIndex = 0;
             this.rb2StronglyAgree.TabStop = true;
             this.rb2StronglyAgree.UseVisualStyleBackColor = true;
@@ -576,7 +576,7 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.rb1Agree);
-            this.panel2.Location = new System.Drawing.Point(257, 29);
+            this.panel2.Location = new System.Drawing.Point(253, 29);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(102, 20);
             this.panel2.TabIndex = 6;
@@ -598,7 +598,7 @@
             // 
             this.panel7.Controls.Add(this.rb2Agree);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(257, 56);
+            this.panel7.Location = new System.Drawing.Point(253, 56);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(102, 21);
             this.panel7.TabIndex = 8;
@@ -619,7 +619,7 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.rb1Disagree);
-            this.panel4.Location = new System.Drawing.Point(463, 29);
+            this.panel4.Location = new System.Drawing.Point(459, 29);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(103, 20);
             this.panel4.TabIndex = 6;
@@ -641,7 +641,7 @@
             // 
             this.panel8.Controls.Add(this.rb2Neutral);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(366, 56);
+            this.panel8.Location = new System.Drawing.Point(362, 56);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(90, 21);
             this.panel8.TabIndex = 8;
@@ -662,9 +662,10 @@
             // panel5
             // 
             this.panel5.Controls.Add(this.rb1StronglyDisagree);
-            this.panel5.Location = new System.Drawing.Point(573, 29);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(569, 29);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(95, 20);
+            this.panel5.Size = new System.Drawing.Size(113, 20);
             this.panel5.TabIndex = 6;
             // 
             // rb1StronglyDisagree
@@ -674,7 +675,7 @@
             this.rb1StronglyDisagree.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rb1StronglyDisagree.Location = new System.Drawing.Point(0, 0);
             this.rb1StronglyDisagree.Name = "rb1StronglyDisagree";
-            this.rb1StronglyDisagree.Size = new System.Drawing.Size(95, 20);
+            this.rb1StronglyDisagree.Size = new System.Drawing.Size(113, 20);
             this.rb1StronglyDisagree.TabIndex = 0;
             this.rb1StronglyDisagree.TabStop = true;
             this.rb1StronglyDisagree.UseVisualStyleBackColor = true;
@@ -684,7 +685,7 @@
             // 
             this.panel9.Controls.Add(this.rb2Disagree);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.Location = new System.Drawing.Point(463, 56);
+            this.panel9.Location = new System.Drawing.Point(459, 56);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(103, 21);
             this.panel9.TabIndex = 8;
@@ -706,9 +707,9 @@
             // 
             this.panel10.Controls.Add(this.rb2StronglyDisagree);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel10.Location = new System.Drawing.Point(573, 56);
+            this.panel10.Location = new System.Drawing.Point(569, 56);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(109, 21);
+            this.panel10.Size = new System.Drawing.Size(113, 21);
             this.panel10.TabIndex = 8;
             // 
             // rb2StronglyDisagree
@@ -718,7 +719,7 @@
             this.rb2StronglyDisagree.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rb2StronglyDisagree.Location = new System.Drawing.Point(0, 0);
             this.rb2StronglyDisagree.Name = "rb2StronglyDisagree";
-            this.rb2StronglyDisagree.Size = new System.Drawing.Size(109, 21);
+            this.rb2StronglyDisagree.Size = new System.Drawing.Size(113, 21);
             this.rb2StronglyDisagree.TabIndex = 0;
             this.rb2StronglyDisagree.TabStop = true;
             this.rb2StronglyDisagree.UseVisualStyleBackColor = true;
@@ -737,7 +738,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 108F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 96F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 109F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 114F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 118F));
             this.tableLayoutPanel1.Controls.Add(this.panel16, 5, 4);
             this.tableLayoutPanel1.Controls.Add(this.panel17, 4, 4);
             this.tableLayoutPanel1.Controls.Add(this.panel19, 3, 4);
@@ -784,9 +785,9 @@
             // 
             this.panel16.Controls.Add(this.rb4StronglyDisagree);
             this.panel16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel16.Location = new System.Drawing.Point(573, 112);
+            this.panel16.Location = new System.Drawing.Point(569, 112);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(109, 21);
+            this.panel16.Size = new System.Drawing.Size(113, 21);
             this.panel16.TabIndex = 8;
             // 
             // rb4StronglyDisagree
@@ -796,7 +797,7 @@
             this.rb4StronglyDisagree.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rb4StronglyDisagree.Location = new System.Drawing.Point(0, 0);
             this.rb4StronglyDisagree.Name = "rb4StronglyDisagree";
-            this.rb4StronglyDisagree.Size = new System.Drawing.Size(109, 21);
+            this.rb4StronglyDisagree.Size = new System.Drawing.Size(113, 21);
             this.rb4StronglyDisagree.TabIndex = 0;
             this.rb4StronglyDisagree.TabStop = true;
             this.rb4StronglyDisagree.UseVisualStyleBackColor = true;
@@ -806,7 +807,7 @@
             // 
             this.panel17.Controls.Add(this.rb4Disagree);
             this.panel17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel17.Location = new System.Drawing.Point(463, 112);
+            this.panel17.Location = new System.Drawing.Point(459, 112);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(103, 21);
             this.panel17.TabIndex = 8;
@@ -828,7 +829,7 @@
             // 
             this.panel19.Controls.Add(this.rb4Neutral);
             this.panel19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel19.Location = new System.Drawing.Point(366, 112);
+            this.panel19.Location = new System.Drawing.Point(362, 112);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(90, 21);
             this.panel19.TabIndex = 8;
@@ -850,9 +851,9 @@
             // 
             this.panel20.Controls.Add(this.rb4StronglyAgree);
             this.panel20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel20.Location = new System.Drawing.Point(148, 112);
+            this.panel20.Location = new System.Drawing.Point(146, 112);
             this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(102, 21);
+            this.panel20.Size = new System.Drawing.Size(100, 21);
             this.panel20.TabIndex = 8;
             // 
             // rb4StronglyAgree
@@ -862,7 +863,7 @@
             this.rb4StronglyAgree.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rb4StronglyAgree.Location = new System.Drawing.Point(0, 0);
             this.rb4StronglyAgree.Name = "rb4StronglyAgree";
-            this.rb4StronglyAgree.Size = new System.Drawing.Size(102, 21);
+            this.rb4StronglyAgree.Size = new System.Drawing.Size(100, 21);
             this.rb4StronglyAgree.TabIndex = 0;
             this.rb4StronglyAgree.TabStop = true;
             this.rb4StronglyAgree.UseVisualStyleBackColor = true;
@@ -872,7 +873,7 @@
             // 
             this.panel18.Controls.Add(this.rb4Agree);
             this.panel18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel18.Location = new System.Drawing.Point(257, 112);
+            this.panel18.Location = new System.Drawing.Point(253, 112);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(102, 21);
             this.panel18.TabIndex = 8;
