@@ -18,6 +18,5 @@ namespace BLL1
         {
             return db.AddResponse(iResponse);
         }
-
     }
 }
